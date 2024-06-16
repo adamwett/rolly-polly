@@ -1,6 +1,6 @@
-import { TabBarIcon } from '@/components/TabBarIcon';
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { TabBarIcon } from "@/components/TabBarIcon";
+import { Tabs } from "expo-router";
+import React from "react";
 
 export default function TabLayout() {
 
@@ -13,18 +13,18 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="index"
                 options={{
-                    title: 'Today',
+                    title: "Today",
                     tabBarIcon: ({ color, focused }) => (
-                        <TabBarIcon name={focused ? 'calendar' : 'calendar-outline'} color={color} focused={focused} />
+                        <TabBarIcon name={focused ? "calendar" : "calendar-outline"} color={color} focused={focused} />
                     ),
                 }}
             />
             <Tabs.Screen
                 name="previous"
                 options={{
-                    title: 'Previous',
+                    title: "Previous",
                     tabBarIcon: ({ color, focused }) => (
-                        <TabBarIcon name={focused ? 'calendar' : 'calendar-outline'} color={color} focused={focused} />
+                        <TabBarIcon name={focused ? "calendar" : "calendar-outline"} color={color} focused={focused} />
                     ),
                 }}
             />

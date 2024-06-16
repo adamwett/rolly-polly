@@ -1,4 +1,4 @@
-import { Image, Platform, SafeAreaView, StyleSheet, Text } from 'react-native';
+import { Image, Platform, SafeAreaView, StyleSheet, Text } from "react-native";
 
 
 export default function HomeScreen() {
