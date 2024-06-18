@@ -1,15 +1,11 @@
-import { Stack } from "expo-router";
-import "react-native-reanimated";
-import "../global.css";
-import { db } from "@/util/firebase";
-import { collection, doc, setDoc } from "firebase/firestore";
+import "@/global.css";
+import { Slot, Stack } from "expo-router";
 
-
-export default function RootLayout() {
-
+export default function Root() {
     return (
         <Stack>
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            <Stack.Screen name="(app)" options={{ headerShown: false }} />
+            <Stack.Screen name="(login)/index" options={{ headerShown: false }} />
         </Stack>
     );
 }
